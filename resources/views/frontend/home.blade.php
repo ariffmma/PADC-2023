@@ -1,0 +1,311 @@
+	
+@extends('frontend.layouts.app')
+@section('title', 'Platinum Architectural Design Competition')
+@section('description', 'Platinum Architectural Design Competition is an event for the next Indonesian architects and designers that aims to develop and train ideas before entering the professional world.')
+@section('keywords', 'platinum, Architectural, Design, Competition, student competition, design competition, design contest, architecture competition, architecture contest')
+@section('canonical', 'https://padc-platinumceramics.com')
+@section('url','https://padc-platinumceramics.com')
+
+@section('content')	
+	<section id="hero" class="hero d-flex align-items-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4">
+						<h2 data-aos="fade-up">
+							<span style="color:#f0a500">PLATINUM </span>
+							<span style="color:#ffffff">ARCHITECTURAL </span>
+							<span style="color:#ffffff">DESIGN </span>
+							<span style="color:#f0a500">COMPETITION </span>
+						</h2>
+						<blockquote data-aos="fade-up" data-aos-delay="100">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
+						</blockquote>
+						<div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+							<a href="#about" class="btn-get-started">Get Started</a>
+							<a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center">
+								<i class="bi bi-play-circle"></i>
+								<span>Watch Video</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<main id="main">
+			<section id="Judges" class="team">
+				<div class="container" data-aos="fade-up">
+					<div class="section-header">
+						<h2>COMPETITION JUDGES</h2>
+					</div>
+					<div class="row gy-4 justify-content-center">
+						<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+							<div class="team-member">
+								<div class="member-img">
+									<img src="{{asset('frontend/assets/img/Dummy.jpg')}}" class="img-fluid" alt="">
+									<div class="social">
+										<a href="">
+											<i class="bi bi-twitter"></i>
+										</a>
+										<a href="">
+											<i class="bi bi-facebook"></i>
+										</a>
+										<a href="">
+											<i class="bi bi-instagram"></i>
+										</a>
+										<a href="">
+											<i class="bi bi-linkedin"></i>
+										</a>
+									</div>
+								</div>
+								<div class="member-info">
+									<h4>Walter White</h4>
+									<span>Chief Executive Officer</span>
+								</div>
+							</div>
+						</div>
+						<!-- End Team Member -->
+						<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+							<div class="team-member">
+								<div class="member-img">
+									<img src="{{asset('frontend/assets/img/Dummy.jpg')}}" class="img-fluid" alt="">
+									<div class="social">
+										<a href="">
+											<i class="bi bi-twitter"></i>
+										</a>
+										<a href="">
+											<i class="bi bi-facebook"></i>
+										</a>
+										<a href="">
+											<i class="bi bi-instagram"></i>
+										</a>
+										<a href="">
+											<i class="bi bi-linkedin"></i>
+										</a>
+									</div>
+								</div>
+								<div class="member-info">
+									<h4>Sarah Jhonson</h4>
+									<span>Product Manager</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="Schedules" class="call-to-action">
+				<div class="container" data-aos="fade-up">
+					<div class="section-header">
+						<h2 style="color:white !important">SCHEDULES</h2>
+					</div>
+					<ul class="timeline">
+						<li>
+							<div class="direction-r">
+								<div class="flag-wrapper">
+									<span class="flag">Registration</span>
+								</div>
+								<div class="desc">31 August - 25 Oktober 2023</div>
+							</div>
+						</li>
+						<li>
+							<div class="direction-l">
+								<div class="flag-wrapper">
+									<span class="flag">Virtual Launching</span>
+								</div>
+								<div class="desc">31 Agustus 2023</div>
+							</div>
+						</li>
+						<li>
+							<div class="direction-r">
+								<div class="flag-wrapper">
+									<span class="flag">Workshop</span>
+								</div>
+								<div class="desc">16 Oktober - 23 Oktober 2023</div>
+							</div>
+						</li>
+						<li>
+							<div class="direction-l">
+								<div class="flag-wrapper">
+									<span class="flag">Submission Deadline</span>
+								</div>
+								<div class="desc">10 November 2023</div>
+							</div>
+						</li>
+						<li>
+							<div class="direction-r">
+								<div class="flag-wrapper">
+									<span class="flag">Announcement Top 5</span>
+								</div>
+								<div class="desc">23 November 2023</div>
+							</div>
+						</li>
+						<li>
+							<div class="direction-l">
+								<div class="flag-wrapper">
+									<span class="flag">Judging And Awarding</span>
+								</div>
+								<div class="desc">25 November - 26 November 2023</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="Prizes" class="services-list">
+				<div class="container" data-aos="fade-up">
+					<div class="section-header">
+						<h2>PRIZES</h2>
+					</div>
+					<div class="row gy-5">
+						<div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+							<div class="icon flex-shrink-0">
+								<i class="bi bi-award" style="color: #f57813;"></i>
+							</div>
+							<div>
+								<h4 class="title">
+									<a href="#" class="stretched-link">1st Prize</a>
+								</h4>
+                <h4 class="title">
+									<a href="#" style="font-size: 32px !important;" class="stretched-link">Rp. 10.000.000,-</a>
+								</h4>
+								<p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trophy</p>
+                <p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Certificate</p>
+                <p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trip to Surabaya</p>
+							</div>
+						</div>
+						<!-- End Service Item -->
+						<div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+							<div class="icon flex-shrink-0">
+								<i class="bi bi-award" style="color: #f57813;"></i>
+							</div>
+							<div>
+								<h4 class="title">
+									<a href="#" class="stretched-link">2nd Prize</a>
+								</h4>
+                <h4 class="title">
+									<a href="#" style="font-size: 32px !important;" class="stretched-link">Rp. 7.500.000,-</a>
+								</h4>
+								<p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trophy</p>
+                <p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Certificate</p>
+                <p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trip to Surabaya</p>
+							</div>
+						</div>
+						<!-- End Service Item -->
+						<div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+							<div class="icon flex-shrink-0">
+								<i class="bi bi-award" style="color: #f57813;"></i>
+							</div>
+							<div>
+								<h4 class="title">
+									<a href="#" class="stretched-link">3rd Prize</a>
+								</h4>
+                <h4 class="title">
+									<a href="#" style="font-size: 32px !important;" class="stretched-link">Rp. 5.000.000,-</a>
+								</h4>
+								<p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trophy</p>
+                <p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Certificate</p>
+                <p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trip to Surabaya</p>
+							</div>
+						</div>
+						<!-- End Service Item -->
+					</div>
+				</div>
+			</section>
+			<section id="About" class="features">
+				<div class="container" data-aos="fade-up">
+					<div class="row">
+						<div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+							<h3>ABOUT PADC</h3>
+							<div class="row">
+								<div class="">
+									<p>Platinum Architectural Design Competition is an event for the next Indonesian architects and designers that aims to develop and train ideas before entering the professional world. Starting in 2022, this is an annual competition and brings the big theme for the first about multi-purpose space. The topic responds to uncertain conditions. This competition will be gathered fresh ideas to face the dynamical conditions in the future.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
+							<div class="phone-wrap">
+								<img src="{{asset('frontend/assets/img/Logo-new.png')}}" alt="Image" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="details">
+					<div class="container" data-aos="fade-up" data-aos-delay="300">
+						<div class="row">
+							<div class="col-md-6">
+								<h3>FAQ</h3>
+								<button type="button" class="collapsible">How do I register?</button>
+								<div class="content">
+									<p>All competition registration can only through the website</p>
+								</div>
+								<button type="button" class="collapsible">Who can join this competition?</button>
+								<div class="content">
+									<p>All students majoring in architecture and interior from all over Indonesia</p>
+								</div>
+								<button type="button" class="collapsible">I’m a 1st semester student, Can I join this competition?</button>
+								<div class="content">
+									<p>Yes, if you can do all the design requirement</p>
+								</div>
+								<button type="button" class="collapsible">What if I don’t get a registration confirmation email?</button>
+								<div class="content">
+									<p>You can ask questions by email at padc2022@platinumceramics.com</p>
+								</div>
+								<button type="button" class="collapsible">Can I have more than one team member?</button>
+								<div class="content">
+									<p>No, one team is only for two people</p>
+								</div>
+								<button type="button" class="collapsible">What are the costs?</button>
+								<div class="content">
+									<p>This competition is free to entry</p>
+								</div>
+								<button type="button" class="collapsible">Can I submit more than one work?</button>
+								<div class="content">
+									<p>No, one participant can only submit one work</p>
+								</div>
+								<button type="button" class="collapsible">Can the site area be more than the provision?</button>
+								<div class="content">
+									<p>No, the site area is only by the provisions of 60 m2</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="Contact" class="contact">
+				<div class="container position-relative" data-aos="fade-up">
+					<div class="section-header">
+						<h2>CONTACT</h2>
+						<p>Contact us if you need more information</p>
+					</div>
+					<div class="row gy-4 d-flex justify-content-center mt-3">
+						<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+							<div class="info-item d-flex">
+								<i class="bi bi-whatsapp flex-shrink-0"></i>
+								<div>
+									<h4>WHATSAPP</h4>
+									<p>+6281326148866</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+							<div class="info-item d-flex">
+								<i class="bi bi-envelope flex-shrink-0"></i>
+								<div>
+									<h4>EMAIL</h4>
+									<p>info@padc-platinumceramics.com</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+							<div class="info-item d-flex">
+								<i class="bi bi-instagram flex-shrink-0"></i>
+								<div>
+									<h4>INSTAGRAM</h4>
+									<p>@platinumcompetition</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+@endsection
