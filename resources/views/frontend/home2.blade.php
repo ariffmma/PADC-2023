@@ -72,7 +72,7 @@
       {
           echo "<div class='launch mb-1 pb-0'>See u on PADC 2023</div>";
       }
-    @endphp
+      @endphp
 
       <div id="countdown"></div>
       @guest

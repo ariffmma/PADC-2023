@@ -1,12 +1,9 @@
 
 
-@extends('frontend.layouts.header')
-
+@extends('frontend.layouts.app')
 @section('content')
-    <!-- ======= Hero Section ======= -->
 <section id="hero">
     <div class="bg slider">
-
       <img src="{{asset('frontend/img/padc-1.jpg')}}" alt='platinum architectural design competition'>
       <img src="{{asset('frontend/img/padc-2.jpg')}}" alt='platinum architectural design competition'>
       <img src="{{asset('frontend/img/padc-3.jpg')}}" alt='platinum architectural design competition'>
@@ -18,7 +15,6 @@
                 {{ 'A fresh verification link has been sent to your email address.' }}
             </div>
         @endif
-
         <div class="launch">{{ __('Before proceeding, please check your email for a verification link.') }}
                    </div>
         <div class="launch"> {{ __('If you did not receive the email') }}, </div>
@@ -28,9 +24,6 @@
         </form>
     </div>
 </section>
-
-
-
 @endsection
 
 

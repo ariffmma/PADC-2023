@@ -90,8 +90,7 @@ $no5 = 1;
                   if(isset($getuniv->universitas)){
                   @endphp
                 <div class="form-group mt-3">
-                    <input type="text" class="form-control input" name="universitas" id="universitas"  value="{{ $getuniv->universitas }}" required>
-                    <span class="focus-input" data-placeholder="University"></span>
+                    <input type="text" class="form-control input" name="universitas" id="universitas"  value="{{ $getuniv->universitas }}" required placeholder="University">
                   </div>
                 @php 
                   }
@@ -102,19 +101,16 @@ $no5 = 1;
                     <div class="form-group col-md-12 mt-3 ">
                       <input type="text" name="id_daftar" value="{{$team->id_daftar}}" style="display:none;">
 
-                      <input type="text" name="{{'name_'.$i++}}" class="form-control input" id="name" value="{{ $team->name }}" required>
-                      <span class="focus-input" data-placeholder="Full Name"></span>
+                      <input type="text" name="{{'name_'.$i++}}" class="form-control input" id="name" value="{{ $team->name }}" required placeholder="Full Name">
 
                     </div>
                 
                     <div class="form-group col-md-12 mt-3 ">
-                        <input type="email" class="form-control input" name="{{'email_'.$i++}}" id="email" value="{{ $team->email }}" required>  
-                        <span class="focus-input" data-placeholder="Email"></span>
+                        <input type="email" class="form-control input" name="{{'email_'.$i++}}" id="email" value="{{ $team->email }}" required placeholder="Email">  
                         
                     </div>
                     <div class="form-group col-md-12 mt-3">
-                        <input type="tel" class="form-control input" name="{{'no_hp_'.$i++}}" id="no_hp" value="{{ $team->no_hp}}" required>
-                        <span class="focus-input" data-placeholder="No Telp"></span>
+                        <input type="tel" class="form-control input" name="{{'no_hp_'.$i++}}" id="no_hp" value="{{ $team->no_hp}}" required placeholder="No Telp">
                     </div>
 
                     <div class="form-group col-md-12 mt-3" >                          
@@ -187,8 +183,7 @@ $no5 = 1;
     
                     <!--</div>-->
                   <div class="form-group mt-3">
-                    <input type="text" class="form-control input" name="universitas" id="universitas" required>
-                    <span class="focus-input" data-placeholder="University"></span>
+                    <input type="text" class="form-control input" name="universitas" id="universitas" required placeholder="University">
                     </div>
 
 
@@ -197,18 +192,15 @@ $no5 = 1;
                       <div class="row">
 
                         <div class="form-group col-md-12 mt-3 ">
-                            <input type="text" name="name" class="form-control input" id="name"  required>
-                            <span class="focus-input" data-placeholder="Full Name"></span>
+                            <input type="text" name="name" class="form-control input" id="name"  required placeholder="Full Name">
                         </div>
                     
                         <div class="form-group col-md-12 mt-3 ">
-                            <input type="email" class="form-control input" name="email" id="email" required>        
-                            <span class="focus-input" data-placeholder="Email"></span>  
+                            <input type="email" class="form-control input" name="email" id="email" required placeholder="Email">        
                         </div>
 
                         <div class="form-group col-md-12 mt-3">
-                            <input type="tel" class="form-control input" name="no_hp" id="no_hp" required>
-                            <span class="focus-input" data-placeholder="No Telp"></span>
+                            <input type="tel" class="form-control input" name="no_hp" id="no_hp" required placeholder="No Telp">
                         </div>
                         <div class="form-group col-md-12 mt-3" >                            	
                    
@@ -227,17 +219,14 @@ $no5 = 1;
                     <div class="col-md-6">
                       <div class="row">
                         <div class="form-group col-md-12 mt-3 ">
-                            <input type="text" name="name2" class="form-control input" id="name2"  required>
-                            <span class="focus-input" data-placeholder="Full name"></span>
+                            <input type="text" name="name2" class="form-control input" id="name2"  required placeholder="Full name">
                         </div>
                         <div class="form-group col-md-12 mt-3">
-                            <input type="email" class="form-control input" name="email2" id="email2" required>        
-                            <span class="focus-input" data-placeholder="Email"></span>  
+                            <input type="email" class="form-control input" name="email2" id="email2" required placeholder="Email">        
                         </div>
                         
                         <div class="form-group col-md-12 mt-3">
-                            <input type="tel" class="form-control input" name="no_hp2" id="no_hp2" required>
-                            <span class="focus-input" data-placeholder="No Telp"></span>
+                            <input type="tel" class="form-control input" name="no_hp2" id="no_hp2" required placeholder="No Telp">
                         </div>
                         
                         <div class="form-group col-md-12 mt-3" >                            	
@@ -296,15 +285,13 @@ $no5 = 1;
               if(isset(auth()->user()->link)){
               @endphp
               <div class="position-relative">
-                <input type="text" class="form-control input" name="link" id="link" value="{{auth()->user()->link}}" required>
-                <span class="focus-input" data-placeholder="Link Google drive"></span>
+                <input type="text" class="form-control input" name="link" id="link" value="{{auth()->user()->link}}" required placeholder="Link Google drive">
               </div>
               @php 
               }else{
               @endphp
               <div class="position-relative">
-                <input type="text" class="form-control input" name="link" id="link" required>
-                <span class="focus-input" data-placeholder="Link Google drive"></span>
+                <input type="text" class="form-control input" name="link" id="link" required placeholder="Link Google drive">
               </div>
               @php 
               }}else{

@@ -9,7 +9,7 @@
 @section('content')	
 	<section id="hero" class="hero d-flex align-items-center">
 			<div class="container">
-				<div class="row">
+				<div class="row" style="margin-top: 6%;">
 					<div class="col-xl-4">
 						<h2 data-aos="fade-up">
 							<span style="color:#f0a500">PLATINUM </span>
@@ -18,15 +18,74 @@
 							<span style="color:#f0a500">COMPETITION </span>
 						</h2>
 						<blockquote data-aos="fade-up" data-aos-delay="100">
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
+							<p>
+								@php 
+								$current = strtotime(date("Y-m-d h:i:s")); 
+								$registration = strtotime("2023-08-01 23:59:00"); 
+								$launching = strtotime("2023-08-20 13:00:00"); 
+								$maxregist = strtotime("2023-09-30 23:59:00"); 
+								$submitting = strtotime("2023-10-13 23:59:00"); 
+								$limabesar = strtotime("2023-10-25 16:00:00"); 
+								$finish = strtotime("2023-10-30 19:00:00"); 
+								$a = $registration - $current; 
+								$b = $launching - $current; 
+								$c = $maxregist - $current; 
+								$d = $submitting - $current; 
+								$e = $limabesar - $current; 
+								$f = $finish - $current; 
+								$regist = floor($a/(60*60*24)); 
+								$launch = floor($b/(60*60*24)); 
+								$maxregister = floor($c/(60*60*24)); 
+								$submit = floor($d/(60*60*24)); 
+								$lima = floor($e/(60*60*24)); 
+								$champion = floor($f/(60*60*24)); 
+								if($regist > 0) 
+								{ echo " 
+									<div class='launch mb-1 pb-0'>countdown to registration!</div>
+									<input type='hidden' id='date_val' value='2023-08-01 23:59:00'>"; } elseif($launch > 0) 
+								{ echo " 
+									<div class='launch mb-1 pb-0'>countdown to Virtual launching!</div>
+									<input type='hidden' id='date_val' value='2023-08-20 13:00:00'>"; }elseif($maxregister > 0) 
+								{ echo " 
+									<div class='launch mb-1 pb-0'>countdown to last user registration!</div>
+									<input type='hidden' id='date_val' value='2023-09-30 23:59:00'>"; }elseif($submit > 0) 
+								{ echo " 
+									<div class='launch mb-1 pb-0'>countdown to last submission!</div>
+									<input type='hidden' id='date_val' value='2023-10-12 23:59:00'>"; } elseif($lima > 0) 
+								{ echo " 
+									<div class='launch mb-1 pb-0'>countdown to top 5 finalis announcement!</div>
+									<input type='hidden' id='date_val' value='2023-10-24 16:00:00'>"; } elseif($champion > 0) 
+								{ echo " 
+									<div class='launch mb-1 pb-0'>countdown to Awarding Night!</div>
+									<input type='hidden' id='date_val' value='2023-10-29 19:00:00'>"; } else 
+								{ echo " 
+									<div class='launch mb-1 pb-0'>See u on PADC 2023</div>"; } 
+								@endphp 
+							</p>
 						</blockquote>
-						<div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-							<a href="#about" class="btn-get-started">Get Started</a>
-							<a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center">
-								<i class="bi bi-play-circle"></i>
-								<span>Watch Video</span>
-							</a>
+						<div>
+							<div id="countdown"></div> 
 						</div>
+						<div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+							@guest 
+							<a href="{{ route('login') }}" class="btn-count-login">Login</a>
+							@else 
+							<a href="{{ route('profile') }}" class="btn-count-login">Profile</a>
+							@endguest
+						</div>
+						<div class=" d-flex justify-content-center logo-hero mt-5">
+							<div class="px-3">
+								<a href="https://www.platinumceramics.com/" target="_blank">
+									<img class="platinum" src="{{asset('frontend/img/platinum_logo.png')}}" style="max-height:40px;" alt="logo platinum ceramics">
+								  </a>
+							</div>
+							<div class="px-3">
+								<a href="https://www.platinumceramics.com/" target="_blank">
+									<img class="asiatile" class="logo-hero" src="{{asset('frontend/img/asiatile_logo.png')}}" style="max-height:40px;" alt="logo Asia tile">
+								  </a>
+							</div>
+							
+						  </div>
 					</div>
 				</div>
 			</div>
@@ -160,15 +219,11 @@
 								<i class="bi bi-award" style="color: #f57813;"></i>
 							</div>
 							<div>
-								<h4 class="title">
-									<a href="#" class="stretched-link">1st Prize</a>
-								</h4>
-                <h4 class="title">
-									<a href="#" style="font-size: 32px !important;" class="stretched-link">Rp. 10.000.000,-</a>
-								</h4>
+								<h4 class="title"><a href="#" class="stretched-link">1st Prize</a></h4>
+                				<h4 class="title"><a href="#" style="font-size: 32px !important;" class="stretched-link">Rp. 10.000.000,-</a></h4>
 								<p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trophy</p>
-                <p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Certificate</p>
-                <p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trip to Surabaya</p>
+                				<p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Certificate</p>
+                				<p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trip to Surabaya</p>
 							</div>
 						</div>
 						<!-- End Service Item -->
@@ -177,15 +232,11 @@
 								<i class="bi bi-award" style="color: #f57813;"></i>
 							</div>
 							<div>
-								<h4 class="title">
-									<a href="#" class="stretched-link">2nd Prize</a>
-								</h4>
-                <h4 class="title">
-									<a href="#" style="font-size: 32px !important;" class="stretched-link">Rp. 7.500.000,-</a>
-								</h4>
+								<h4 class="title"><a href="#" class="stretched-link">2nd Prize</a></h4>
+								<h4 class="title"><a href="#" style="font-size: 32px !important;" class="stretched-link">Rp. 7.500.000,-</a></h4>
 								<p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trophy</p>
-                <p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Certificate</p>
-                <p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trip to Surabaya</p>
+                				<p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Certificate</p>
+                				<p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trip to Surabaya</p>
 							</div>
 						</div>
 						<!-- End Service Item -->
@@ -194,15 +245,11 @@
 								<i class="bi bi-award" style="color: #f57813;"></i>
 							</div>
 							<div>
-								<h4 class="title">
-									<a href="#" class="stretched-link">3rd Prize</a>
-								</h4>
-                <h4 class="title">
-									<a href="#" style="font-size: 32px !important;" class="stretched-link">Rp. 5.000.000,-</a>
-								</h4>
+								<h4 class="title"><a href="#" class="stretched-link">3rd Prize</a></h4>
+								<h4 class="title"><a href="#" style="font-size: 32px !important;" class="stretched-link">Rp. 5.000.000,-</a></h4>
 								<p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trophy</p>
-                <p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Certificate</p>
-                <p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trip to Surabaya</p>
+								<p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Certificate</p>
+								<p class="description"><i class="bi bi-patch-check-fill" style="color: #f57813;"></i> Trip to Surabaya</p>
 							</div>
 						</div>
 						<!-- End Service Item -->
@@ -307,5 +354,27 @@
 				</div>
 			</section>
 		</main>
-
+		<script>
+			$(window).scroll(function() {
+			  if ($(window).scrollTop() > 550) {
+				$('.register-button').addClass('active');
+			  } else {
+				$('.register-button').removeClass('active');
+			  }
+			});
+			$(document).ready(function(e) {
+				  window.history.replaceState('', '', '/');
+				  var valuedate = $('#date_val').val();
+				  $('#countdown').countdown(valuedate) // Get you DB value and pass in this funciton.
+					.on('update.countdown', function(event) {
+						var day = '%D';
+						var hour = '%H';
+						var minute = '%M';
+						var second = '%S';
+						$(this).html("  <div class='count-down-container'><div class='count-down-box'><div class='count-down'><h1 id='days'>"+event.strftime(day)+"</h1><p>Days</p></div></div><div class='count-down-box'><div class='count-down'><h1 id='hours'>"+event.strftime(hour)+"</h1><p>Hours</p></div></div><div class='count-down-box'><div class='count-down'><h1 id='minutes'>"+event.strftime(minute)+"</h1><p>Minutes</p></div></div><div class='count-down-box'><div class='count-down'><h1 id='seconds'>"+event.strftime(second)+"</h1><p>Seconds</p></div></div></div>");
+						}).on('finish.countdown', function(event) {
+						$(this).html('This offer has expired!')
+					  });
+					});
+		  </script> 
 @endsection
