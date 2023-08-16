@@ -30,6 +30,7 @@ Route::get('/agatha-carolina',[App\Http\Controllers\FrontController::class,'agat
 Route::get('/wendy-djuhara',[App\Http\Controllers\FrontController::class,'wendy'])->name('wendy');
 Route::get('sitemap.xml',[App\Http\Controllers\FrontController::class,'sitemap']);
 Route::get('/last-edition',[App\Http\Controllers\FrontController::class,'last_edition'])->name('last-edition');
+Route::get('/gallery',[App\Http\Controllers\FrontController::class,'gallery'])->name('gallery');
 // 404
 Route::get('/nopermission', function(){ return back(); })->name('nopermission');
 

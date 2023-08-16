@@ -32,6 +32,11 @@ class FrontController extends Controller
         return view('frontend.last-editions');
     }
 
+    public function gallery()
+    {
+        return view('frontend.gallery');
+    }
+
     public function download( $filename = '' )
     {
         // Check if file exists in app/storage/file folder

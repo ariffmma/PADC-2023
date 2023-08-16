@@ -100,7 +100,7 @@
 						<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
 							<div class="team-member">
 								<div class="member-img">
-									<img src="{{asset('frontend/assets/img/Dummy.jpg')}}" class="img-fluid" alt="">
+									<img src="{{asset('frontend/img/kelvin-tenggono.jpg')}}" class="img-fluid" alt="">
 									<div class="social">
 										<a href="">
 											<i class="bi bi-twitter"></i>
@@ -126,7 +126,7 @@
 						<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
 							<div class="team-member">
 								<div class="member-img">
-									<img src="{{asset('frontend/assets/img/Dummy.jpg')}}" class="img-fluid" alt="">
+									<img src="{{asset('frontend/img/michael-lauw.jpg')}}" class="img-fluid" alt="">
 									<div class="social">
 										<a href="">
 											<i class="bi bi-twitter"></i>
