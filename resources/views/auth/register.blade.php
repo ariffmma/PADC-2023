@@ -10,9 +10,9 @@
 <section id="account" >
   <div class="container" data-aos="fade-up">
     <ul class="nav nav-tabs justify-content-center" role="tablist" data-aos="fade-up" data-aos-delay="100">
-      <li class="nav-item"><a class="nav-link " id="tab_login" href="{{route('login')}}">Login</a></li>
-      <li class="nav-item"><a class="nav-link active" id="tab_register" href="#tab-2" role="tab" data-bs-toggle="tab">Register</a></li>
-      <li class="nav-item"><a class="nav-link" id="tab_reset" href="{{ route('password.request') }}">Forgot Password</a></li>
+      <li class="nav-item"><a class="nav-link " id="tab_login" href="{{route('login')}}" style="font-weight: 900 !important;">Login</a></li>
+      <li class="nav-item"><a class="nav-link active" id="tab_register" href="#tab-2" role="tab" data-bs-toggle="tab" style="font-weight: 900 !important;">Register</a></li>
+      <li class="nav-item"><a class="nav-link" id="tab_reset" href="{{ route('password.request') }}" style="font-weight: 900 !important;">Forgot Password</a></li>
     </ul>
     <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
         <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="tab-2">
@@ -65,7 +65,7 @@
                         </div>
                         <div class="row mb-0 text-center">
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" style="font-weight: 900 !important;">
                                     {{ __('Register') }}
                                 </button>
                             </div>

@@ -2601,14 +2601,17 @@ section {
 }
 
 .content {
-  
+  border-radius: 10px;
+  margin-bottom: 30px;
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f0a4007e;
+  background-color: #f0a500;
 }
 .content p{
-  margin-top: 20px;
+  color: #fff;
+  margin-bottom: 4px !important;
+  margin-top: 4px;
 }
 
 .btn-account a:hover{

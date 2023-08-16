@@ -68,9 +68,9 @@
 						</div>
 						<div class="d-flex" data-aos="fade-up" data-aos-delay="200">
 							@guest 
-							<a href="{{ route('login') }}" class="btn-count-login">Login</a>
+							<a href="{{ route('login') }}" class="btn-count-login" style="font-weight: 900 !important;">Login</a>
 							@else 
-							<a href="{{ route('profile') }}" class="btn-count-login">Profile</a>
+							<a href="{{ route('profile') }}" class="btn-count-login" style="font-weight: 900 !important;">Profile</a>
 							@endguest
 						</div>
 						<div class=" d-flex justify-content-center logo-hero mt-5">

@@ -50,9 +50,9 @@
 			<form id="logout-form-front" action="{{ route('logout') }}" method="POST" style="display: none;">@csrf</form>
 			@endguest
 			@guest
-			<div class="btn-account btn-nav-showhide"><a href="{{ route('login') }}" style="color: #fff !important" class="btn-get-started">Account</a></div>
+			<div class="btn-account btn-nav-showhide"><a href="{{ route('login') }}" style="color: #fff !important; font-weight: 900 !important;" class="btn-get-started">Account</a></div>
 			@else
-			<div class="btn-account btn-nav-showhide"><a href="{{ route('profile') }}" style="color: #fff !important" class="btn-get-started">Profile</a></div>
+			<div class="btn-account btn-nav-showhide"><a href="{{ route('profile') }}" style="color: #fff !important font-weight: 900 !important;" class="btn-get-started">Profile</a></div>
 			@endguest
 			<i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
 			<i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -64,7 +64,7 @@
 				<li><a href="{{ route('home') }}#Schedules">Schedules</a></li>
 				<li><a href="{{ route('home') }}#Prizes">Prizes</a></li>
 				<li><a href="https://www.platinumceramics.com/" target="_blank">About Platinum</a></li>
-				<li><a href="{{ route('last-edition') }}">Last Editions</a></li>
+				<li><a href="{{ route('last-edition') }}">PADC 2022</a></li>
 				<li><a href="{{ route('gallery') }}">Gallery</a></li>
 				<li class="dropdown">
 					<a href="#"><span>Download</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -88,9 +88,9 @@
 				@endguest
 			</ul>
 				@guest
-				<div class="btn-account"><a href="{{ route('login') }}" style="color: #fff !important" class="btn-get-started">Account</a></div>
+				<div class="btn-account"><a href="{{ route('login') }}" style="color: #fff !important; font-weight: 900 !important;" class="btn-get-started">Account</a></div>
 				@else
-				<div class="btn-account"><a href="{{ route('profile') }}" style="color: #fff !important" class="btn-get-started">Profile</a></div>
+				<div class="btn-account"><a href="{{ route('profile') }}" style="color: #fff !important; font-weight: 900 !important;" class="btn-get-started">Profile</a></div>
 				@endguest
 		</nav>
 	</div>
@@ -220,15 +220,19 @@
 	var coll = document.getElementsByClassName("collapsible");
 	var i;
 	for (i = 0; i < coll.length; i++) {
-		coll[i].addEventListener("click", function() {
-			this.classList.toggle("active");
-			var content = this.nextElementSibling;
-			if (content.style.display === "block") {
-				content.style.display = "none";
-			} else {
-				content.style.display = "block";
-			}
-		});
+ 	coll[i].addEventListener("click", function() {
+		for(item of coll){
+		item.classList.remove("active");
+		item.nextElementSibling.style.display = "none";
+		}
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+		content.style.display = "none";
+		} else {
+		content.style.display = "block";
+		}
+  	});
 	}
 </script>
 <script>
