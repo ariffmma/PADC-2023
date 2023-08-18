@@ -78,7 +78,6 @@
 				</div>
 			</div>
 		</section>
-		<a data-bs-toggle="modal" data-bs-target="#popupplatinum" data-ticket-type="standard-access">Catalog</a>
 		<main id="main">
 			<section id="Judges" class="team">
 				<div class="container" data-aos="fade-up">
@@ -342,7 +341,38 @@
 					</div>
 				</div>
 			</section>
+			<div id="popupplatinum" class="modal fade">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+					<div class="modal-header bg-popup-header">
+						<div class="title-popup">#explorationthepast</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body justify-content-center bg-popup">
+						<div class=" d-flex justify-content-center align-items-center logo-hero">
+							<div class="px-3">
+								<a href="https://www.platinumceramics.com/" target="_blank">
+									<img class="platinum" src="{{asset('frontend/img/platinum_logo.png')}}" style="max-height:60px;" alt="logo platinum ceramics">
+								  </a>
+							</div>
+							<div class="px-3">
+								<a href="https://www.platinumceramics.com/" target="_blank">
+									<img class="asiatile" class="logo-hero" src="{{asset('frontend/img/asiatile_logo.png')}}" style="max-height:60px;" alt="logo Asia tile">
+								  </a>
+							</div>
+						  </div>
+					</div>
+					</div><!-- /.modal-content -->
+				</div>
+			</div>
 		</main>
+		<script type="text/javascript">
+			$(window).on('load', function() {
+				setTimeout(function(){
+					$('#popupplatinum').modal('show');
+   				}, 2000);
+			});
+		</script>
 		<script>
 			$(window).scroll(function() {
 			  if ($(window).scrollTop() > 550) {
