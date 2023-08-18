@@ -73,28 +73,17 @@
 							<a href="{{ route('profile') }}" class="btn-count-login" style="font-weight: 900 !important;">Profile</a>
 							@endguest
 						</div>
-						<div class=" d-flex justify-content-center logo-hero mt-5">
-							<div class="px-3">
-								<a href="https://www.platinumceramics.com/" target="_blank">
-									<img class="platinum" src="{{asset('frontend/img/platinum_logo.png')}}" style="max-height:40px;" alt="logo platinum ceramics">
-								  </a>
-							</div>
-							<div class="px-3">
-								<a href="https://www.platinumceramics.com/" target="_blank">
-									<img class="asiatile" class="logo-hero" src="{{asset('frontend/img/asiatile_logo.png')}}" style="max-height:40px;" alt="logo Asia tile">
-								  </a>
-							</div>
-							
-						  </div>
+					
 					</div>
 				</div>
 			</div>
 		</section>
+		<a data-bs-toggle="modal" data-bs-target="#popupplatinum" data-ticket-type="standard-access">Catalog</a>
 		<main id="main">
 			<section id="Judges" class="team">
 				<div class="container" data-aos="fade-up">
 					<div class="section-header">
-						<h2>COMPETITION JUDGES</h2>
+						<h2>JUDGES</h2>
 					</div>
 					<div class="row gy-4 justify-content-center">
 						<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -283,33 +272,33 @@
 								<div class="content">
 									<p>All competition registration can only through the website</p>
 								</div>
-								<button type="button" class="collapsible">Who can join this competition?</button>
-								<div class="content">
-									<p>All students majoring in architecture and interior from all over Indonesia</p>
-								</div>
-								<button type="button" class="collapsible">I’m a 1st semester student, Can I join this competition?</button>
-								<div class="content">
-									<p>Yes, if you can do all the design requirement</p>
-								</div>
-								<button type="button" class="collapsible">What if I don’t get a registration confirmation email?</button>
-								<div class="content">
-									<p>You can ask questions by email at padc2022@platinumceramics.com</p>
-								</div>
-								<button type="button" class="collapsible">Can I have more than one team member?</button>
-								<div class="content">
-									<p>No, one team is only for two people</p>
-								</div>
 								<button type="button" class="collapsible">What are the costs?</button>
 								<div class="content">
 									<p>This competition is free to entry</p>
+								</div>
+								<button type="button" class="collapsible">Who can join this competition?</button>
+								<div class="content">
+									<p>All students majoring in architecture and interior from all over Indonesia</p>
 								</div>
 								<button type="button" class="collapsible">Can I submit more than one work?</button>
 								<div class="content">
 									<p>No, one participant can only submit one work</p>
 								</div>
+								<button type="button" class="collapsible">Can I have more than one team member?</button>
+								<div class="content">
+									<p>No, one team is only for two people</p>
+								</div>
 								<button type="button" class="collapsible">Can the site area be more than the provision?</button>
 								<div class="content">
 									<p>No, the site area is only by the provisions of 60 m2</p>
+								</div>
+								<button type="button" class="collapsible">What if I don’t get a registration confirmation email?</button>
+								<div class="content">
+									<p>You can ask questions by email at padc2022@platinumceramics.com</p>
+								</div>
+								<button type="button" class="collapsible">I’m a 1st semester student, Can I join this competition?</button>
+								<div class="content">
+									<p>Yes, if you can do all the design requirement</p>
 								</div>
 							</div>
 						</div>

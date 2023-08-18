@@ -73,14 +73,6 @@
 						<li><a data-bs-toggle="modal" data-bs-target="#download-modal" data-ticket-type="standard-access">Catalog</a></li>
 					</ul>
 				</li>
-				<li class="dropdown">
-					<a href="#"><span>Info</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
-					<ul>
-						<li><a href="{{ route('home') }}#About">About</a></li>
-						<li><a href="{{ route('home') }}#About">FAQ</a></li>
-						<li><a href="{{ route('home') }}#Contact">Contact</a></li>
-					</ul>
-				</li>
 				@guest 
 				@else
 				<li><a href="{{ route('login') }}" onclick="event.preventDefault(); document.getElementById('logout-form-front').submit();">Logout</a></li>
@@ -165,38 +157,22 @@
 	<div class="footer-content">
 		<div class="container">
 			<div class="row gy-4">
-				<div class="col-xl-6 col-lg-4 col-md-12 footer-info">
+				<div class="col-xl-6 col-lg-6 col-md-4 footer-info">
 					<a href="{{ route('home') }}" class="logo d-flex align-items-center">
 						<div class="d-flex align-items-center"><img src="{{asset('frontend/assets/img/logo/logo.png')}}" alt="">
 						</div>
 					</a>
-					<p style="color: white;">Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
 				</div>
-				<div class="col-xl-2 col-lg-2 col-md-4  col-sm-4 col-6 footer-links">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 footer-links">
 					<ul>
-						<li><i class="bi bi-dash"></i><a href="{{ route('home') }}">Home</a></li>
-						<li><i class="bi bi-dash"></i><a href="#Judges">Judges</a></li>
-						<li><i class="bi bi-dash"></i><a href="#Schedules">Schedules</a></li>
-						<li><i class="bi bi-dash"></i><a href="#Prizes">Prizes</a></li>
-						<li><i class="bi bi-dash"></i><a href="https://www.platinumceramics.com/" target="_blank">About Platinum</a></li>
+						<li><i class="bi bi-facebook"></i><a class="ps-2" href="https://web.facebook.com/platinumceramicsindustry" target="_blank"> platinumceramicsindustry</a></li>
+						<li><i class="bi bi-twitter"></i><a class="ps-2" href="https://twitter.com/platinumceramic?lang=en" target="_blank"> PlatinumCeramic</a></li>
 					</ul>
 				</div>
-				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 footer-links">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 footer-links">
 					<ul>
-						<li><i class="bi bi-dash"></i><a href="#About">FAQ</a></li>
-						<li><i class="bi bi-dash"></i><a href="#Contact">Contact</a></li>
-						<li><i class="bi bi-dash"></i><a href="#">Account</a></li>
-						<li><i class="bi bi-dash"></i><a href="#">Download TOR</a></li>
-						<li><i class="bi bi-dash"></i><a href="#">Download Catalog</a></li>
-					</ul>
-				</div>
-				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-12 footer-links">
-					<ul>
-						<li><i class="bi bi-facebook"></i><a class="ps-2" href=""> platinumceramicsindustry</a></li>
-						<li><i class="bi bi-twitter"></i><a class="ps-2" href=""> PlatinumCeramic</a></li>
-						<li><i class="bi bi-instagram"></i><a class="ps-2" href="#"> platinumcompetition</a></li>
-						<li><i class="bi bi-instagram"></i><a class="ps-2" href="#"> platinum.ceramics</a></li>
-						<li><i class="bi bi-youtube"></i><a class="ps-2" href="#"> Platinum Ceramics</a></li>
+						<li><i class="bi bi-instagram"></i><a class="ps-2" href="https://www.instagram.com/platinum.ceramics/" target="_blank"> platinum.ceramics</a></li>
+						<li><i class="bi bi-youtube"></i><a class="ps-2" href="https://www.youtube.com/@platinumceramics9826" target="_blank"> Platinum Ceramics</a></li>
 					</ul>
 				</div>
 			</div>

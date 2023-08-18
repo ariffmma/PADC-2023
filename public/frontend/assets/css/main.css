@@ -1104,7 +1104,7 @@ section {
 
 .team .team-member .social a {
   transition: color 0.3s;
-  color: #31547c;
+  color: #000000;
   margin: 0 10px;
   display: inline-flex;
   align-items: center;
@@ -1337,8 +1337,6 @@ section {
   bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 15px;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
@@ -2182,7 +2180,7 @@ section {
 }
 
 .footer .footer-content .footer-info .logo img {
-  max-height: 40px;
+  max-height: 60px;
   margin-right: 6px;
 }
 
@@ -2603,15 +2601,15 @@ section {
 .content {
   border-radius: 10px;
   margin-bottom: 30px;
-  padding: 0 18px;
+  /* padding: 0 18px; */
   display: none;
   overflow: hidden;
-  background-color: #f0a500;
+  background-color: #f0a40000;
 }
 .content p{
-  color: #fff;
+  font-size: 18px !important;
+  color: #f0a500;
   margin-bottom: 4px !important;
-  margin-top: 4px;
 }
 
 .btn-account a:hover{
@@ -3224,11 +3222,90 @@ form i {
 }
 
 .title-gallery {
+  cursor: pointer;
   font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: var(--color-secondary);
+  font-size: 14px;
+  color: #fff;
+  padding: 4px 10px 4px 10px;
+  border-radius: 10px;
+  background-color: #f0a500;
 }
 .title-gallery:hover {
-  color: #f0a500;
+  color: #fff;
 }
+
+.bg-popup{
+  height: 300px;
+  background-color: #1b1a17
+}
+.bg-popup-header{
+  background-color: #f0a500
+}
+.title-popup{
+  font-weight: 900;
+  color: #1b1a17;
+  font-size:21px;
+}
+.logo-hero{
+  height:250px;
+}
+
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  filter:alpha(opacity=70);
+  -moz-opacity:0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+  z-index: 100;
+  display: none;
+  }
+  .cnt223 a{
+  text-decoration: none;
+  }
+  .popup-onload{
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+  position: fixed;
+  z-index: 101;
+  }
+  .cnt223{
+  min-width: 600px;
+  width: 600px;
+  min-height: 150px;
+  margin: 100px auto;
+  background: #f3f3f3;
+  position: relative;
+  z-index: 103;
+  padding: 15px 35px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #000;
+  }
+  .cnt223 p{
+  clear: both;
+      color: #555555;
+      /* text-align: justify; */
+      font-size: 20px;
+      font-family: sans-serif;
+  }
+  .cnt223 p a{
+  color: #d91900;
+  font-weight: bold;
+  }
+  .cnt223 .x{
+  float: right;
+  height: 35px;
+  left: 22px;
+  position: relative;
+  top: -25px;
+  width: 34px;
+  }
+  .cnt223 .x:hover{
+  cursor: pointer;
+  }
