@@ -110,13 +110,13 @@
 			<form method="POST"  id="upload_form" enctype="multipart/form-data" role="form" >
 			@csrf
 			<p class="text-center">Please enter your email address to receive download link For PADC TOR</p>
-			<h3 class="text-center"><i class="bi bi-download"></i></h3>
+			<h3 class="text-center"><i class="bi bi-download" style="margin-left:0 !important"></i></h3>
 			<div class="form-group ">
 				<input type="email" class="form-control input" name="email" placeholder="Email Address" required>
 			</div>
 			
 			<div class="text-center ">
-				<button type="submit" name="upload" id="upload" class="btn unduh-link">Download</button>
+				<button type="submit" name="upload" id="upload" class="btn-popup">Download</button>
 			</div>
 			</form>
 		</div>
@@ -136,19 +136,19 @@
 			<p id="pesan3" class="sent-message text-center" style="display:none;"></p>
 			
 			<div id="ok2" class="text-center mt-3" style="display:none;">
-				<button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn unduh-link">OK</button>
+				<button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-popup">OK</button>
 			</div>
 			
 			<form method="POST"  id="upload_form2" enctype="multipart/form-data" role="form" >
 			@csrf
 			<p class="text-center">Please enter your email address to receive download  link for Platinum Catalog</p>
-			<h3 class="text-center"><i class="bi bi-download"></i></h3>
+			<h3 class="text-center"><i class="bi bi-download"  style="margin-left:0 !important"></i></h3>
 			<div class="form-group ">
 				<input type="email" class="form-control input" name="email" placeholder="Email Address" required>
 			</div>
 			
 			<div class="text-center ">
-				<button type="submit" name="upload2" id="upload2" class="btn unduh-link">Download</button>
+				<button type="submit" name="upload2" id="upload2" class="btn-popup">Download</button>
 			</div>
 			</form>
 		</div>

@@ -674,6 +674,22 @@ section {
   border-radius: 10px;
   background: #f0a500;
 }
+.btn-popup {
+  margin-left: 0px;
+  margin-top: 20px;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-block;
+  transition: 0.5s;
+  color: #fff;
+  padding: 6px 10px 6px 10px !important;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border-color: white;
+  border: 1px;
+  background: #f0a500;
+}
 .hero .btn-count-login:hover {
   background: #ad7600;
 }
