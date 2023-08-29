@@ -12,7 +12,7 @@
     <ul class="nav nav-tabs justify-content-center" role="tablist" data-aos="fade-up" data-aos-delay="100">
       <li class="nav-item"><a class="nav-link active" id="tab_login" href="#tab-1" role="tab" data-bs-toggle="tab" style="font-weight: 900 !important;">Login</a></li>
       <li class="nav-item"><a class="nav-link" id="tab_register" href="{{route('register')}}" style="font-weight: 900 !important;">Register</a></li>
-      <li class="nav-item"><a class="nav-link" id="tab_reset"  href="{{ route('password.request') }}" style="font-weight: 900 !important;">Forgot Password</a></li>
+      {{-- <li class="nav-item"><a class="nav-link" id="tab_reset"  href="{{ route('password.request') }}" style="font-weight: 900 !important;">Forgot Password</a></li> --}}
     </ul>
     <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
         <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="tab-1">

@@ -40,11 +40,19 @@
 <body class="page-index">
 <header id="header" class="header d-flex align-items-center fixed-top">
 	<div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-		<a href="{{ route('home') }}" class="logo d-flex align-items-center">
+		<div class="logo d-flex align-items-center">
 			<div class="d-flex align-items-center">
-				<img src="{{asset('frontend/assets/img/logo/logo.png')}}" alt="">
+				<a href="{{ route('home') }}">
+					<img src="{{asset('frontend/assets/img/logo/logo.png')}}" alt="">
+				</a>
+				<a href="">
+					<img class="ps-3" src="{{asset('frontend/img/platinum_logo.png')}}" style="max-height: 35px !important;" alt="">
+				</a>
+				<a href="">
+					<img class="ps-3" src="{{asset('frontend/img/asiatile_logo.png')}}" style="max-height: 35px !important;" alt="">
+				</a>
 			</div>
-		</a>
+		</div>
 		<div class="d-flex align-items-center justify-content-between">
 			@guest 
 			@else
@@ -52,27 +60,27 @@
 			<form id="logout-form-front" action="{{ route('logout') }}" method="POST" style="display: none;">@csrf</form>
 			@endguest
 			@guest
-			<div class="btn-account btn-nav-showhide"><a href="{{ route('login') }}" style="color: #fff !important; font-weight: 900 !important;" class="btn-get-started">Account</a></div>
+			<div class="btn-account btn-nav-showhide"><a href="{{ route('login') }}" style="color: #fff !important; font-weight: 900 !important; font-size: 12px !important;" class="btn-get-started">Account</a></div>
 			@else
 			<div class="btn-account btn-nav-showhide"><a href="{{ route('profile') }}" style="color: #fff !important font-weight: 900 !important;" class="btn-get-started">Profile</a></div>
 			@endguest
 			<i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-			<i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+			<i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" id="hamburger-menu"></i>
 		</div>
 		<nav id="navbar" class="navbar">
 			<ul>
-				<li><a href="{{ route('home') }}" class="active">Home</a></li>
-				<li><a href="{{ route('home') }}#Judges">Judges</a></li>
-				<li><a href="{{ route('home') }}#Schedules">Schedules</a></li>
-				<li><a href="{{ route('home') }}#Prizes">Prizes</a></li>
-				<li><a href="https://www.platinumceramics.com/" target="_blank">About Platinum</a></li>
-				<li><a href="{{ route('last-edition') }}">PADC 2022</a></li>
-				<li><a href="{{ route('gallery') }}">Gallery</a></li>
+				<li><a href="{{ route('home') }}" class="">Home</a></li>
+				<li><a class="close-hamburger" href="{{ route('home') }}#Judges">Judges</a></li>
+				<li><a class="close-hamburger" href="{{ route('home') }}#Schedules">Schedules</a></li>
+				<li><a class="close-hamburger" href="{{ route('home') }}#Prizes">Prizes</a></li>
+				<li><a class="close-hamburger" href="https://www.platinumceramics.com/" target="_blank">About Platinum</a></li>
+				<li><a class="close-hamburger" href="{{ route('last-edition') }}">PADC 2022</a></li>
+				<li><a class="close-hamburger" href="{{ route('gallery') }}">Gallery</a></li>
 				<li class="dropdown">
 					<a href="#"><span>Download</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
 					<ul>
-						<li><a data-bs-toggle="modal" data-bs-target="#unduh-modal" data-ticket-type="standard-access">TOR</a></li>
-						<li><a data-bs-toggle="modal" data-bs-target="#download-modal" data-ticket-type="standard-access">Catalog</a></li>
+						<li><a class="close-hamburger" data-bs-toggle="modal" data-bs-target="#unduh-modal" data-ticket-type="standard-access">TOR</a></li>
+						<li><a class="close-hamburger" data-bs-toggle="modal" data-bs-target="#download-modal" data-ticket-type="standard-access">Catalog</a></li>
 					</ul>
 				</li>
 				@guest 
@@ -116,7 +124,7 @@
 			</div>
 			
 			<div class="text-center ">
-				<button type="submit" name="upload" id="upload" class="btn-popup">Download</button>
+				<button type="submit" name="upload" id="upload" class="btn-popup"><i class="fa fa-circle-notch faa-spin animated " style="margin-left:0px !important"></i> Sending..</button>
 			</div>
 			</form>
 		</div>
@@ -224,6 +232,13 @@ $('.slider').slick({
             infinite:true,
             });
 })
+</script>
+<script>
+	$(document).ready(function(){
+		$( '.close-hamburger' ).on("click", function(){
+		$('#hamburger-menu').click();
+		});
+	})
 </script>
 @stack('script')
 </body>

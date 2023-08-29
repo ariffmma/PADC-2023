@@ -312,6 +312,7 @@
 					</div>
 					<div class="row gy-4 d-flex justify-content-center mt-3">
 						<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+							<a href="">
 							<div class="info-item d-flex">
 								<i class="bi bi-whatsapp flex-shrink-0"></i>
 								<div>
@@ -319,6 +320,7 @@
 									<p>+6281326148866</p>
 								</div>
 							</div>
+						</a>
 						</div>
 						<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
 							<div class="info-item d-flex">
