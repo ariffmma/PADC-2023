@@ -70,15 +70,19 @@
             </div>
         </div>
 		<div class="d-flex align-items-center justify-content-between">
-			@guest 
-			@else
-			<a href="{{ route('login') }}" class="nav-logout btn-nav-showhide" onclick="event.preventDefault(); document.getElementById('logout-form-front').submit();">Logout</a>
-			<form id="logout-form-front" action="{{ route('logout') }}" method="POST" style="display: none;">@csrf</form>
-			@endguest
 			@guest
 			<div class="btn-account btn-nav-showhide"><a href="{{ route('login') }}" style="color: #fff !important; font-weight: 900 !important;font-size: 12px !important;" class="btn-get-started">Account</a></div>
 			@else
-			<div class="btn-account btn-nav-showhide"><a href="{{ route('profile') }}" style="color: #fff !important; font-weight: 900 !important;font-size: 12px !important;" class="btn-get-started">Profile</a></div>
+			<div class="navbar-mobile">
+				<div class="dropdown-mobile">
+				  <div class="btn-get-started" style="color: #fff !important; font-weight: 900 !important;font-size: 12px !important;">Account </div>
+				  <div class="dropdown-content">
+					<a href="{{ route('profile') }}">Profile</a>
+					<a href="{{ route('login') }}" class="nav-logout btn-nav-showhide" onclick="event.preventDefault(); document.getElementById('logout-form-front').submit();">Logout</a>
+					<form id="logout-form-front" action="{{ route('logout') }}" method="POST" style="display: none;">@csrf</form>
+				  </div>
+				</div> 
+			  </div>
 			@endguest
 			<i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
 			<i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" id="hamburger-menu"></i>
