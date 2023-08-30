@@ -201,7 +201,7 @@
 						<h2>PRIZES</h2>
 					</div>
 					<div class="row gy-5">
-						<div class="col-lg-4 col-md-6 service-item d-flex justify-content-start" data-aos="fade-up" data-aos-delay="100">
+						<div class="col-lg-4 col-md-12 col-sm-12 service-item flex-custom1" data-aos="fade-up" data-aos-delay="100">
 							<div class="icon flex-shrink-0">
 								<i class="bi bi-award" style="color: #f57813;"></i>
 							</div>
@@ -216,7 +216,7 @@
 							</div>
 						</div>
 						<!-- End Service Item -->
-						<div class="col-lg-4 col-md-6 service-item d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+						<div class="col-lg-4 col-md-6 col-sm-12 service-item flex-custom2" data-aos="fade-up" data-aos-delay="100">
 							<div class="icon flex-shrink-0">
 								<i class="bi bi-award" style="color: #f57813;"></i>
 							</div>
@@ -230,7 +230,7 @@
 							</div>
 						</div>
 						<!-- End Service Item -->
-						<div class="col-lg-4 col-md-6 service-item d-flex justify-content-end" data-aos="fade-up" data-aos-delay="100">
+						<div class="col-lg-4 col-md-6 col-sm-12 service-item flex-custom3" data-aos="fade-up" data-aos-delay="100">
 							<div class="icon flex-shrink-0">
 								<i class="bi bi-award" style="color: #f57813;"></i>
 							</div>
@@ -250,18 +250,13 @@
 			<section id="About" class="features">
 				<div class="container" data-aos="fade-up">
 					<div class="row">
-						<div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+						<div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
 							<h3>ABOUT PADC</h3>
 							<div class="row">
 								<div class="">
-									<p>Platinum Architectural Design Competition is an event for the next Indonesian architects and designers that aims to develop and prepare ideas before joining the professional scope. Starting in 2022, this annual competition brings the big theme for the first multi-purpose space. This competition will be gathered fresh ideas to face the dynamic conditions in the future.</p>
+									<p style="font-size: 18px;font-weight: 500;">Platinum Architectural Design Competition is an event for the next Indonesian architects and designers that aims to develop and prepare ideas before joining the professional scope. Starting in 2022, this annual competition brings the big theme for the first multi-purpose space. This competition will be gathered fresh ideas to face the dynamic conditions in the future.</p>
 								</div>
 							</div>
-						</div>
-						<div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
-							<!-- <div class="phone-wrap">
-								<img src="{{asset('frontend/assets/img/Logo-new.png')}}" alt="Image" class="img-fluid">
-							</div> -->
 						</div>
 					</div>
 				</div>
@@ -307,7 +302,7 @@
 					</div>
 					<div class="row gy-4 d-flex justify-content-center mt-3">
 						<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-							<div class="info-item d-flex justify-content-start">
+							<div class="info-item flex-contact-custom1">
 								<i class="bi bi-whatsapp flex-shrink-0"></i>
 								<div>
 								     <a href="https://wa.me/6285186664866" target="_blanks">
@@ -318,7 +313,7 @@
 							</div>
 						</div>
 						<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-							<div class="info-item d-flex justify-content-center">
+							<div class="info-item flex-contact-custom2">
 								<i class="bi bi-envelope flex-shrink-0"></i>
 								<div>
 								    <a href="mailto:info@padc-platinumceramics.com" target="_blanks">
@@ -329,7 +324,7 @@
 							</div>
 						</div>
 						<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-							<div class="info-item d-flex justify-content-end">
+							<div class="info-item flex-contact-custom3">
 								<i class="bi bi-instagram flex-shrink-0"></i>
 								<div>
 								    <a href="https://www.instagram.com/platinumcompetition/" target="_blanks">
@@ -345,22 +340,11 @@
 			<div id="popupplatinum" class="modal fade">
 				<div class="modal-dialog modal-dialog-centered" role="document">
 					<div class="modal-content">
-					<div class="modal-header bg-popup-header">
-						<div class="title-popup">#explorationthepast</div>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
+				
 					<div class="modal-body justify-content-center bg-popup">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute;right: 16px;filter: brightness(0) invert(1);"></button>
 						<div class=" d-flex justify-content-center align-items-center logo-hero">
-							<div class="px-3">
-								<a href="https://www.platinumceramics.com/" target="_blank">
-									<img class="platinum" src="{{asset('frontend/img/platinum_logo.png')}}" style="max-height:60px;" alt="logo platinum ceramics">
-								  </a>
-							</div>
-							<div class="px-3">
-								<a href="https://www.platinumceramics.com/" target="_blank">
-									<img class="asiatile" class="logo-hero" src="{{asset('frontend/img/asiatile_logo.png')}}" style="max-height:60px;" alt="logo Asia tile">
-								  </a>
-							</div>
+							<div class="title-popup"><a href="">#explorationthepast</a></div>
 						  </div>
 					</div>
 					</div><!-- /.modal-content -->
